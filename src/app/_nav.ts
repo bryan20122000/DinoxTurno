@@ -14,9 +14,10 @@ export const navItems: INavData[] =
     url: '/pages',
     icon: 'icon-star',
     children: [
+
       {
-        name: 'Turno',
-        url: '/login',
+        name: 'Login',
+        url: '/usuarios',
         icon: 'icon-cursor'
       },
       {

@@ -38,6 +38,8 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts';
 import { TurnosModule } from './views/turnos/turnos.module';
+import { UsuariosModule } from './views/usuarios/usuarios.module';
+
 
 @NgModule({
   imports: [
@@ -55,11 +57,12 @@ import { TurnosModule } from './views/turnos/turnos.module';
     ChartsModule,
     IconModule,
     IconSetModule.forRoot(),
-    TurnosModule
+    TurnosModule,
+    UsuariosModule
   ],
   declarations: [
     AppComponent,
-    ...APP_CONTAINERS,
+    ...APP_CONTAINERS
   ],
   providers: [
     {
