@@ -39,6 +39,7 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts';
 import { TurnosModule } from './views/turnos/turnos.module';
 import { UsuariosModule } from './views/usuarios/usuarios.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import { UsuariosModule } from './views/usuarios/usuarios.module';
     IconModule,
     IconSetModule.forRoot(),
     TurnosModule,
-    UsuariosModule
+    UsuariosModule,
+    ReactiveFormsModule
   ],
   declarations: [
     AppComponent,

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -6,10 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+  form: FormGroup;
+  constructor(private readonly fb: FormBuilder) {
 
-  constructor() { }
+
+  }
 
   ngOnInit(): void {
+    this.form = this.fb.group({
+      username: [],
+      password: []
+    });
+  }
+
+  login() {
+
+    alert(this.form.getRawValue());
   }
 
 }

@@ -12,4 +12,9 @@ export class TurneroComponent implements OnInit {
   ngOnInit(): void {
   }
 
+login(){
+
+  alert("hola mundo")
+}
+
 }
