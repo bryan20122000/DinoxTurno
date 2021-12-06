@@ -22,7 +22,8 @@ export class LoginComponent implements OnInit {
 
   login() {
 
-    alert(this.form.getRawValue());
+    alert(this.form.controls['password'].value);
+    alert(this.form.controls['username'].value);
   }
 
 }
