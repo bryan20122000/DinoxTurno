@@ -40,7 +40,7 @@ import { ChartsModule } from 'ng2-charts';
 import { TurnosModule } from './views/turnos/turnos.module';
 import { UsuariosModule } from './views/usuarios/usuarios.module';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -60,7 +60,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     IconSetModule.forRoot(),
     TurnosModule,
     UsuariosModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule 
   ],
   declarations: [
     AppComponent,
